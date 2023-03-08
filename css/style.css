@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+}
+
+.content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.animated-shape {
+    stroke: red;
+    stroke-width: 5;
+    fill: yellow;
+    animation-name: color-change;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes color-change {
+    0% {
+        stroke: red;
+        fill: yellow;
+    }
+
+    50% {
+        stroke: blue;
+        fill: green;
+    }
+
+    100% {
+        stroke: red;
+        fill: yellow;
+    }
+}
